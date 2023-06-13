@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+li,
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #333;
+    position: relative;
+}
+
+.menu .filter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu .filter li a {
+    display: block;
+    height: 33px;
+    text-indent: -9999px;
+    transition: 0.5s;
+    background-position: 0px 0px;
+}
+
+.menu .filter li a:hover {
+    background-position: 0px -33px;
+}
+
+.menu .filter li a.menu1 {
+    background-image: url(./img/menu1.png);
+    width: 79px;
+}
+
+.menu .filter li a.menu2 {
+    background-image: url(./img/menu2.png);
+    width: 61px;
+}
+
+.menu .filter li a.menu3 {
+    background-image: url(./img/menu3.png);
+    width: 81px;
+}
+
+.menu .filter li a.menu4 {
+    background-image: url(./img/menu4.png);
+    width: 77px;
+}
+
+.item {
+    width: 320px;
+    height: 200px;
+    margin: 100px auto;
+}
+
+.item div {
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/box27.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    /* transition: 1s; - not recommended */
+}
+
+.item div:hover {
+    background-position: 0px -200px;
+}
+
+/*
+background-position:
+이미지가 시작되는 곳 또는 이미지가 구현되는 중점을
+어느 곳에 둘 것인지 결정한다
+*/
+
+.container {
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+    background-color: #aaa;
+}
+
+.box {
+    background-color: #fff;
+    border: 1px solid #333;
+}
+
+.box .boxBg {
+    width: 100%;
+    height: 200px;
+    background-image: url(./img/pic1.jpg);
+    background-position: top;
+    background-size: cover;
+    transition: 1s;
+}
+
+.box .boxBg:hover {
+    background-position: bottom;
+}
